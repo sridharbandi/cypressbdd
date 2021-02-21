@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Sauce demo Login",
+    "line": 1,
+    "id": "sauce-demo-login",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "sauce-demo-login;login-feature",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login feature",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I was on Sauce demo site",
+            "result": {
+              "status": "passed",
+              "duration": 451000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I logged in with \"standard_user\" \"secret_sauce\"",
+            "result": {
+              "status": "passed",
+              "duration": 1067000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should be landed in products page",
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I logout",
+            "result": {
+              "status": "passed",
+              "duration": 734000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the login page",
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

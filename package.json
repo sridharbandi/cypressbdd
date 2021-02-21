@@ -1,0 +1,30 @@
+{
+  "name": "cypressframeworkbdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run:dev": "./node_modules/.bin/cypress run --browser chrome --config-file cypressdev.json",
+    "run:test": "./node_modules/.bin/cypress run --browser chrome --config-file cypresstest.json",
+    "cy:dashboard": "./node_modules/.bin/cypress run --browser chrome --record --key d95959e3-1082-4178-b456-adb9ae8d53ff",
+    "cy:report":"node report.js",
+    "cy:bdd":"./node_modules/.bin/cypress-tags run --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.3.0",
+    "cypress": "^6.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
